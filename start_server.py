@@ -33,7 +33,6 @@ db_env = {'HBNB_MYSQL_USER': 'hbnb_dev', 'HBNB_MYSQL_PWD': 'hbnb_dev_pwd',
 
 new_env = os.environ.copy()
 if (storage_mode == 'db'):
-    print(storage_mode)
     new_env.update(db_env)
 
 proc = subprocess.run(['python3', '-m', module], env=new_env)
